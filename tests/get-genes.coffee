@@ -14,7 +14,7 @@ describe "Getting genes from flymine", ->
         lookup: "eve, zen, bib, r, h"
         extraValue: "D. melanogaster"
 
-  it 'should find 5 primary ids', (done) ->
+  it 'should find 7 primary ids', (done) ->
     gettingGenes.then( (ids) -> ids.should.have.lengthOf 7 )
                 .then((-> done()), done)
 
